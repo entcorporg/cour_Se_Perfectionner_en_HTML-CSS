@@ -1,0 +1,86 @@
+/* ===== VARIABLES CSS ===== */
+:root {
+    --color-rouge-1: #aa3322;
+    --color-rouge-2: #721717;
+    --color-noir: #000000;
+    --color-blanc: #ffffff;
+    --color-gris-1: #cccccc;
+    --color-gris-2: #aaaaaa;
+    --color-gris-3: #ededed;
+    --background-rouge-1: #aa3322;
+    --background-rouge-2: #721717;
+    --background-gris-1: #cccccc;
+    --background-gris-2: #aaaaaa;
+    --background-gris-3: #ededed;
+    --background-blanc: #ffffff;
+    --background-noir: #000000;
+    --size-xs: 12px;
+    --size-sm: 14px;
+    --size-md: 20px;
+    --size-lg: 26px;
+    --size-xl: 34px;
+    --font-xs: 100;
+    --font-sm: 300;
+    --font-md: 500;
+    --font-lg: 700;
+    --font-xl: 900;
+}
+
+/* ===== lien in page ===== */
+.link-in-page {
+    text-decoration: none;
+    color: var(--color-rouge-1);
+    font-size: var(--size-sm);
+}
+
+.link-in-page a {
+    text-decoration: none;
+    color: var(--color-rouge-1);
+    font-size: var(--size-sm);
+    text-decoration: underline;
+}
+
+/* ===== card livre ===== */
+.card-livre {
+    background-color: var(--background-gris-3);
+    border: 1.5px solid var(--color-rouge-1);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.card-livre-titre {
+    color: var(--color-rouge-1);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-livre-auteur {
+    color: var(--color-noir);
+    font-size: var(--size-sm);
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.card-livre-genre {
+    color: var(--color-noir);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-livre-description {
+    color: var(--color-noir);
+    font-size: var(--size-sm);
+    line-height: 1.5;
+}
+
+/* ===== grid ===== */
+.grid-3-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    width: 80%;
+    margin: 0 auto;
+}

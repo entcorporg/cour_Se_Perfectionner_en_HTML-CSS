@@ -1,0 +1,80 @@
+/* ===== VARIABLES CSS ===== */
+:root {
+    --color-rouge-1: #aa3322;
+    --color-rouge-2: #721717;
+    --color-noir: #000000;
+    --color-blanc: #ffffff;
+    --color-gris-1: #cccccc;
+    --color-gris-2: #aaaaaa;
+    --color-gris-3: #ededed;
+    --background-rouge-1: #aa3322;
+    --background-rouge-2: #721717;
+    --background-gris-1: #cccccc;
+    --background-gris-2: #aaaaaa;
+    --background-gris-3: #ededed;
+    --background-blanc: #ffffff;
+    --background-noir: #000000;
+    --size-xs: 12px;
+    --size-sm: 14px;
+    --size-md: 20px;
+    --size-lg: 26px;
+    --size-xl: 34px;
+    --font-xs: 100;
+    --font-sm: 300;
+    --font-md: 500;
+    --font-lg: 700;
+    --font-xl: 900;
+}
+
+.titre-principal {
+    font-family: 'Dancing Script', 'Lucida Calligraphy', cursive;
+    font-size: var(--size-xl);
+    font-weight: var(--font-xl);
+    color: var(--color-rouge-1);
+}
+
+/* ===== NAV ===== */
+.menu-principal ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: var(--background-rouge-1);
+    text-align: center;
+    font-size: 0;
+}
+
+.menu-principal ul li {
+    display: inline-block;
+    font-size: var(--size-xs);
+    font-weight: var(--font-xl);
+}
+
+.menu-principal ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    color: var(--color-gris-1);
+    border-right: 1px dashed var(--color-blanc);
+}
+
+.menu-principal ul li:last-child a {
+    border-right: none;
+}
+
+.menu-principal ul li a:hover {
+    background: var(--background-gris-1);
+    color: var(--color-blanc);
+}
+
+.footer {
+    margin-top: 60px;
+    padding: 30px 10px 20px 10px;
+    text-align: center;
+    font-size: var(--size-sm);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+}
